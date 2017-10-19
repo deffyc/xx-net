@@ -1,7 +1,5 @@
-FROM python:2.7
+FROM python:2.7-alpine3.4
 MAINTAINER houjie <deffyc@gmail.com>
-
-RUN apt-get install openssl-devel
 
 RUN git clone https://github.com/xyuanmu/XX-Mini.git $HOME/c9sdk && \
     cd $HOME/c9sdk
