@@ -1,7 +1,7 @@
 FROM python:2.7
 MAINTAINER houjie <deffyc@gmail.com>
 
-RUN apt-get install python-openssl
+RUN apt-get install openssl-devel
 
 RUN git clone https://github.com/xyuanmu/XX-Mini.git $HOME/c9sdk && \
     cd $HOME/c9sdk
