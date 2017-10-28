@@ -1,7 +1,7 @@
-FROM deffyc/debianvm:latest
+FROM python:2.7
 MAINTAINER houjie <deffyc@gmail.com>
 
-RUN sudo apt update && sudo apt install -y build-essential gcc git make python2.7 zip python-openssl
+RUN pip install -r /opt/pyspider/requirements.txt
 
 RUN git clone https://github.com/xyuanmu/XX-Mini.git $HOME/c9sdk && \
     cd $HOME/c9sdk
