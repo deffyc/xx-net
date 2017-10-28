@@ -1,10 +1,9 @@
 FROM python:2.7
 MAINTAINER houjie <deffyc@gmail.com>
 
-RUN pip install -r /opt/pyspider/requirements.txt
+RUN pip install -r requirements.txt
 
-RUN git clone https://github.com/xyuanmu/XX-Mini.git $HOME/c9sdk && \
-    cd $HOME/c9sdk
+cd /xx
     
 EXPOSE 8086
 EXPOSE 8087
