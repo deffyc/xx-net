@@ -7,7 +7,6 @@ RUN mkdir /xx && \
 
 EXPOSE 8086
 EXPOSE 8087
-EXPOSE 8088
 
 
 CMD  python
