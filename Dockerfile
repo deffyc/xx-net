@@ -5,8 +5,7 @@ RUN pip install pyOpenSSL
 RUN mkdir /xx && \
    cd /xx
 
-EXPOSE 8086
-EXPOSE 8087
+EXPOSE 8084 8085 8086 8087 8888 1080
 
 
 CMD  python
